@@ -1,0 +1,9 @@
+/* scroll barı siliyor */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* place holder renk */
+input::placeholder {
+  color: white;
+}

@@ -8,7 +8,7 @@ const completedTodo = props => {
       <HStack
         boxShadow="xl"
         borderRadius={15}
-        bgColor={'gray.200'}
+        bgColor={'white'}
         justifyContent={'space-between'}
         px={'2'}
         w={'80vw'}
@@ -22,7 +22,7 @@ const completedTodo = props => {
           aria-label="Add Icon"
           size="sm"
           color="white"
-          bgColor={'red'}
+          bgColor={'#D92525'}
           onClick={props.deleteTodo}
           icon={<DeleteIcon />}
         ></IconButton>
@@ -49,21 +49,21 @@ const completedTodo = props => {
               aria-label="Add Icon"
               size="sm"
               color="white"
-              bgColor={'#2F855A'}
+              bgColor={'#256DD9'}
               onClick={props.editTodo}
               icon={<EditIcon />}
             ></IconButton>
           ) : (
             <IconButton
               mr={'2'}
-              colorScheme="teal"
+              colorScheme="purple"
               variant="solid"
               borderRadius={'full'}
               size="xl"
               w={8}
               h={8}
               color="white"
-              bgColor={'#2F855A'}
+              bgColor={'#D0D0D0'}
               onClick={props.saveTodo}
               icon={<FaRegSave />}
             ></IconButton>
@@ -75,7 +75,7 @@ const completedTodo = props => {
             aria-label="Add Icon"
             size="sm"
             color="white"
-            bgColor={'teal'}
+            bgColor={'#29D925'}
             onClick={props.completedTodo}
             icon={<CheckIcon />}
           ></IconButton>

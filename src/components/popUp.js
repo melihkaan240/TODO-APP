@@ -8,6 +8,7 @@ import {
   Button,
   AlertDialog,
   useDisclosure,
+  Box,
 } from '@chakra-ui/react';
 function SavedLocalStorage(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -15,7 +16,7 @@ function SavedLocalStorage(props) {
 
   return (
     <>
-      <Button colorScheme="purple" onClick={onOpen}>
+      <Button colorScheme="gray.200" bgColor={'#C225D9'} onClick={onOpen}>
         Saved Todo List
       </Button>
 
